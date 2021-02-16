@@ -1,0 +1,25 @@
+{
+  "name": "ambience.css-documentation",
+  "version": "1.0.0",
+  "description": "![Ambience Studios Banner](https://github.com/Ambience-Studios/assets/blob/main/ambience%20studios%20banner.png)",
+  "main": "index.js",
+  "dependencies": {
+    "sass": "^1.32.7"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ambience-Studios/ambience.css-documentation.git"
+  },
+  "author": "Eli, Elijah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ambience-Studios/ambience.css-documentation/issues"
+  },
+  "homepage": "https://github.com/Ambience-Studios/ambience.css-documentation#readme"
+}
