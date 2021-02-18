@@ -14,7 +14,7 @@ body{
 // Styling
 
 #container{
-    background-image: url("/docs/style/benjamin-suter-unsplash.jpg");
+    background-image: url("/docs/images/benjamin-suter-unsplash.jpg");
 
     width: auto;
     padding: 5em;
@@ -32,16 +32,19 @@ body{
 
 #titlesection{
     padding: 15vw;
-    text-align: center;
+    height: 75vh;
 }
 
 .title{
     font-size: 6vh;
+
     color: white;
+    text-align: center;
 }
 
 .description{
     color: white;
+    text-align: center;
 }
 
 .removelinkstyling{
@@ -55,4 +58,10 @@ body{
 .attribution{
     color: white;
     float: left;
+}
+
+.logo{
+    width: 10vw;
+    margin: 0;
+    padding: 0;
 }
