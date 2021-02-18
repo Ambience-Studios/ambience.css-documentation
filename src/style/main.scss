@@ -1,4 +1,4 @@
-// Use `sass --watch .\docs\style\main.scss .\docs\style\compiled\maincss.css` to compile scss to css.
+// Use `sass --watch .\src\style\main.scss .\src\style\compiled\maincss.css` to compile scss to css.
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -14,7 +14,7 @@ body{
 // Styling
 
 #container{
-    background-image: url("/docs/images/benjamin-suter-unsplash.jpg");
+    background-image: url("/src/images/benjamin-suter-unsplash.jpg");
 
     width: auto;
     padding: 5em;
@@ -31,7 +31,7 @@ body{
 }
 
 #titlesection{
-    padding: 15vw;
+    padding: 5vw;
     height: 75vh;
 }
 
@@ -61,7 +61,31 @@ body{
 }
 
 .logo{
-    width: 10vw;
-    margin: 0;
+    width: 4vw;
+
+    display: block;
+    border: none;
     padding: 0;
+    margin: 0;
 }
+
+.logotext{
+    text-align: center;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    color: white;   
+    font-weight: bold;
+}
+
+// .socials{
+//     display: flex;
+//     flex-direction: row;
+//     float: right;
+// }
+
+// .discordlogo{
+//     width: 5vh;
+// }

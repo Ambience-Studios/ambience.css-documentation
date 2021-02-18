@@ -9,7 +9,7 @@ body {
 }
 
 #container {
-  background-image: url("/docs/images/benjamin-suter-unsplash.jpg");
+  background-image: url("/src/images/benjamin-suter-unsplash.jpg");
   width: auto;
   padding: 5em;
   height: auto;
@@ -22,7 +22,7 @@ body {
 }
 
 #titlesection {
-  padding: 15vw;
+  padding: 5vw;
   height: 75vh;
 }
 
@@ -53,9 +53,22 @@ body {
 }
 
 .logo {
-  width: 10vw;
-  margin: 0;
+  width: 4vw;
+  display: block;
+  border: none;
   padding: 0;
+  margin: 0;
+}
+
+.logotext {
+  text-align: center;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=maincss.css.map */
