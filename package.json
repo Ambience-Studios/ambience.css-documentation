@@ -1,9 +1,10 @@
 {
   "name": "ambience.css-documentation",
   "version": "1.0.0",
-  "description": "![Ambience Studios Banner](https://github.com/Ambience-Studios/assets/blob/main/ambience%20studios%20banner.png)",
+  "description": "Official documentation for the ambience.css framework.",
   "main": "index.js",
   "dependencies": {
+    "normalize-scss": "^7.0.1",
     "sass": "^1.32.7"
   },
   "devDependencies": {

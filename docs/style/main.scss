@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    margin: 0vh;
+    padding: 0vh;
+}
+
+// Styling
+
+#container{
+    background-image: url("/docs/style/benjamin-suter-unsplash.jpg");
+
+    width: auto;
+    padding: 5em;
+  
+    height: auto;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    transition: 0.1ms;
+}
+
+#titlesection{
+    padding: 15vw;
+    text-align: center;
+}
+
+.title{
+    font-size: 6vh;
+    color: white;
+}
+
+.description{
+    color: white;
+}
+
+.removelinkstyling{
+    color: white;
+    text-decoration: none;
+}
+.removelinkstyling:hover{
+    transition: 0.1s;
+    color: rgb(37, 194, 37);
+}
+.attribution{
+    color: white;
+    float: left;
+}
