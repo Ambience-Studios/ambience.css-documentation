@@ -1,6 +1,7 @@
 // Use `sass --watch ./src/main.scss ./public/compiled/maincss.css` to compile scss to css.
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs');
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -14,7 +15,7 @@ body{
 // Styling
 
 #container{
-    background-image: url("/src/images/benjamin-suter-unsplash.jpg");
+    background-image: url("/public/images/benjamin-suter-unsplash.jpg");
 
     width: auto;
     padding: 5em;
@@ -33,6 +34,7 @@ body{
 #titlesection{
     padding: 5vw;
     height: 75vh;
+    margin-top: 10vh;
 }
 
 .title{
@@ -40,11 +42,14 @@ body{
 
     color: white;
     text-align: center;
+
+    font-family: Hack, monospace;
 }
 
 .description{
     color: white;
     text-align: center;
+    font-size: 3vh;
 }
 
 .removelinkstyling{
@@ -60,25 +65,34 @@ body{
     float: left;
 }
 
-.logo{
-    width: 4vw;
-
-    display: block;
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.logotext{
-    text-align: center;
-}
-
-#navbar{
-    display: flex;
-    flex-direction: row;
-    color: white;   
-    font-weight: bold;
-}
+nav {
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.404);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ul {
+      text-align: center;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      li {
+        display: inline;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 17px;
+        a {
+          color: #f2f2f2;
+          text-decoration: none;
+          padding: 14px;
+          &:hover {
+            background-color: #111;
+            transition: 1s;
+          }
+        }
+      }
+    }
+  }
 
 // .socials{
 //     display: flex;
