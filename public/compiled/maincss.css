@@ -1,12 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs");
+.wipimagecontainer {
+  background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  width: auto;
+  padding: 5em;
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+  transition: 0.1ms;
+  filter: blur(10px);
+}
+
+#content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.wiptitle {
+  font-family: Hack, monospace;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
 
 html {
   min-height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -42,16 +72,29 @@ body {
     border-color: #01581b;
   }
 }
-#container {
+.imagecontainer {
   background-image: url("/public/images/benjamin-suter-unsplash.jpg");
   width: auto;
   padding: 5em;
-  height: 90VH;
+  height: auto;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  box-sizing: border-box;
   background-size: cover;
+  transition: 0.1ms;
+}
+
+.installtitle {
+  color: black;
+  padding: 0 1rem;
+  margin: 1rem auto 6rem;
+}
+
+.container {
+  padding: 5em;
+  height: auto;
   transition: 0.1ms;
 }
 
@@ -88,12 +131,29 @@ body {
   float: left;
 }
 
+#githublogo {
+  width: 20px;
+  vertical-align: middle;
+}
+
+#ambiencelogo {
+  width: 20px;
+  vertical-align: middle;
+  float: left;
+}
+
+#discordlogo {
+  width: 42px;
+  vertical-align: middle;
+}
+
 nav {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0);
   position: fixed;
   top: 0;
   width: 100%;
+  clip: rect(auto, auto, auto, auto);
 }
 nav ul {
   text-align: center;
@@ -117,6 +177,14 @@ nav ul li a {
 nav ul li a:hover {
   background-color: rgba(17, 17, 17, 0.5);
   transition: 1s;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
 }
 
 /*# sourceMappingURL=maincss.css.map */

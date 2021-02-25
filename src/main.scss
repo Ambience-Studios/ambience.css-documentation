@@ -3,13 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs');
 
+@import "./wip.scss";
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
 html{
     min-height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body{
@@ -51,19 +53,39 @@ body{
 
 // Styling
 
-#container{
+.imagecontainer{
+
     background-image: url("/public/images/benjamin-suter-unsplash.jpg");
 
     width: auto;
     padding: 5em;
   
-    height: 90VH;
-  
+    height: auto;
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+
+
+   
+    box-sizing: border-box;
+
     background-size: cover;
+  
+    transition: 0.1ms;
+
+}
+
+.installtitle{
+    color: black;
+    padding: 0 1rem;
+    margin: 1rem auto 6rem;
+}
+
+.container{
+    padding: 5em;
+    height: auto;
   
     transition: 0.1ms;
 }
@@ -103,6 +125,22 @@ body{
     float: left;
 }
 
+#githublogo{
+    width: 20px;
+    vertical-align: middle;
+}
+
+#ambiencelogo{
+    width: 20px;
+    vertical-align: middle;
+    float: left;
+}
+
+#discordlogo{
+    width: 42px;
+    vertical-align: middle;
+}
+
 // Navigation Bar
 
 nav {
@@ -111,6 +149,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    clip: rect(auto, auto, auto, auto);
     ul {
       text-align: center;
       list-style-type: none;
@@ -133,15 +172,12 @@ nav {
           }
         }
       }
-    }
+     }
   }
 
-// .socials{
-//     display: flex;
-//     flex-direction: row;
-//     float: right;
-// }
-
-// .discordlogo{
-//     width: 5vh;
-// }
+  .white{
+      color: white;
+  }
+  .black{
+      color: black;
+  }
