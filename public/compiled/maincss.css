@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs");
 .wipimagecontainer {
-  background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  background-image: url("../images/benjamin-suter-unsplash.jpg"); 
   width: auto;
   padding: 5em;
   height: 100%;
