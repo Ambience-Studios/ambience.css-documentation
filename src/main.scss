@@ -19,6 +19,13 @@ body{
     padding: 0vh;
 }
 
+.black{
+    color: black;
+}
+.white{
+    color: white;
+}
+
 // Typewriter effect
 
 .typewriter-effect{
@@ -77,12 +84,6 @@ body{
 
 }
 
-.installtitle{
-    color: black;
-    padding: 0 1rem;
-    margin: 1rem auto 6rem;
-}
-
 .container{
     padding: 5em;
     height: auto;
@@ -101,14 +102,16 @@ body{
     display: inline-block;
     font-size: 6vh;
 
-    color: white;
+    font-family: Hack, monospace;
+}
+
+.secondarytitle{
+    font-size: 2vh;
 
     font-family: Hack, monospace;
 }
 
 .description{
-    color: white;
-
     font-size: 3vh;
 }
 
@@ -125,15 +128,16 @@ body{
     float: left;
 }
 
+// Logos
+
 #githublogo{
     width: 20px;
     vertical-align: middle;
 }
 
 #ambiencelogo{
-    width: 20px;
+    width: 30px;
     vertical-align: middle;
-    float: left;
 }
 
 #discordlogo{
@@ -146,7 +150,7 @@ body{
 nav {
     overflow: hidden;
     background-color: rgba(255, 255, 255, 0);
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     clip: rect(auto, auto, auto, auto);
@@ -175,9 +179,12 @@ nav {
      }
   }
 
-  .white{
-      color: white;
-  }
-  .black{
-      color: black;
-  }
+//Installation
+
+.install{
+    display: inline-block;
+    background-color: rgb(211, 211, 211);
+    padding: 20px;
+    border-radius: 5px;
+}
+
