@@ -26,6 +26,18 @@ body{
     color: white;
 }
 
+.bold{
+    font-weight: bold;
+}
+
+.largegap{
+    padding-bottom: 1em;
+}
+
+.gapabove{
+    padding-top: 1em;
+}
+
 // Typewriter effect
 
 .typewriter-effect{
@@ -91,11 +103,26 @@ body{
     transition: 0.1ms;
 }
 
+// Sections
+
 #titlesection{
     padding: 5vw;
     height: 75vh;
     margin-top: 10vh;
     
+}
+
+#installsection{
+    padding: 40px;
+}
+
+#descriptionsection{
+    padding: 40px;
+    padding-top: 0px;
+    ul{
+        list-style-type: none;
+        padding: 0px;
+    }
 }
 
 .title{

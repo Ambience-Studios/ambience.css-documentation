@@ -52,6 +52,18 @@ body {
   color: white;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+.largegap {
+  padding-bottom: 1em;
+}
+
+.gapabove {
+  padding-top: 1em;
+}
+
 .typewriter-effect {
   display: inline-block;
   overflow: hidden;
@@ -104,6 +116,19 @@ body {
   padding: 5vw;
   height: 75vh;
   margin-top: 10vh;
+}
+
+#installsection {
+  padding: 40px;
+}
+
+#descriptionsection {
+  padding: 40px;
+  padding-top: 0px;
+}
+#descriptionsection ul {
+  list-style-type: none;
+  padding: 0px;
 }
 
 .title {

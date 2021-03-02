@@ -5,3 +5,5 @@
 > Work in Progress
 
 Official documentation for the ambience.css framework.
+
+[Using Prism Syntax Highlighting](https://prismjs.com/)
