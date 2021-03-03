@@ -140,15 +140,14 @@ body {
 }
 
 .container {
-  padding: 5em;
   height: auto;
   transition: 0.1ms;
 }
 
 .imagecontainer {
   background-image: url("/public/images/benjamin-suter-unsplash.jpg");
-  width: auto;
   padding: 5em;
+  width: auto;
   height: auto;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -166,7 +165,7 @@ body {
 }
 
 #installsection {
-  padding: 40px;
+  padding: 2.5em;
 }
 
 #descriptionsection {
@@ -217,9 +216,8 @@ body {
   display: flex;
   font-size: 20px;
   text-decoration: none;
-  justify-content: center;
-  padding: 1em;
   gap: 1em;
+  padding-top: 1em;
 }
 
 .downloadbutton {
