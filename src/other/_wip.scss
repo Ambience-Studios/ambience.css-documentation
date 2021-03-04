@@ -1,37 +1,36 @@
-.wipimagecontainer{
-    background-image: url("../public/images/benjamin-suter-unsplash.jpg"); // ../images/benjamin-suter-unsplash.jpg
-    
+.wipimagecontainer {
+  background-image: url("../public/images/benjamin-suter-unsplash.jpg"); // ../images/benjamin-suter-unsplash.jpg
 
-    width: auto;
-    padding: 5em;
-  
-    height: 100%;
+  width: auto;
+  padding: 5em;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 100%;
 
-    box-sizing: border-box;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    background-size: cover;
-  
-    transition: 0.1ms;
+  box-sizing: border-box;
 
-    filter: blur(10px);
+  background-size: cover;
+
+  transition: 0.1ms;
+
+  filter: blur(10px);
 }
 
-#content{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    backface-visibility: hidden;
-    border-radius: 5px;
+#content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
 }
 
-.wiptitle{
-    font-family: Hack, monospace;
+.wiptitle {
+  font-family: Hack, monospace;
 }

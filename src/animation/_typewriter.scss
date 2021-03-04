@@ -1,31 +1,32 @@
 // Typewriter effect
 
-.typewriter-effect{
-    display: inline-block;
-    overflow: hidden;
-    letter-spacing: 2px;
-    animation: typing 3s steps(25, end), blink .75s step-end infinite;
-    white-space: nowrap;
-    font-size: 30px;
-    font-weight: 700;
-    border-right: 4px solid rgb(0, 128, 38);
-    box-sizing: border-box;
+.typewriter-effect {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 3s steps(25, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid rgb(0, 128, 38);
+  box-sizing: border-box;
 }
 
 @keyframes typing {
-    0% {
-        width: 0;
-      }
-    100% {
-        width: 7em;
-      }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 7em;
+  }
 }
 
 @keyframes blink {
-    from, to { 
-        border-color: transparent 
-    }
-    50% { 
-        border-color: rgb(1, 88, 27); 
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(1, 88, 27);
+  }
 }

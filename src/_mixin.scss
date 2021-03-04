@@ -1,0 +1,30 @@
+@mixin basicontainer {
+  padding: 5vw;
+  height: 75vh;
+  margin-top: 10vh;
+}
+
+@mixin display($display) {
+  display: $display;
+}
+
+@mixin flexcolumn {
+  flex-direction: column;
+}
+
+@mixin flexrow {
+  flex-direction: row;
+}
+
+@mixin parallax {
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+
+  background-size: cover;
+
+  transition: 0.1ms;
+}

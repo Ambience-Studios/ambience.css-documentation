@@ -1,164 +1,155 @@
 // Use `sass --watch ./src/main.scss ./public/compiled/maincss.css` to compile scss to css.
 
 // Importing fonts
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs");
+
+@import "./mixin";
 
 // Importing other SCSS files
 @import "./base/colours";
 @import "./other/wip";
 @import "./components/titlenavigationbar";
 @import "./components/generalnavigationbar";
-
+@import "./animation/typewriter";
+@import "./components/downloads";
 
 * {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-html{
-    min-height: 100%;
-    overflow-x: hidden;
+html {
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
-body{
-    margin: 0vh;
-    padding: 0vh;
+body {
+  margin: 0vh;
+  padding: 0vh;
 }
 
-.largegap{
-    padding-bottom: 1em;
+.largegap {
+  padding-bottom: 1em;
 }
 
-.gapabove{
-    padding-top: 1em;
+.gapabove {
+  padding-top: 1em;
 }
 
+.removelinkstyling {
+  color: white;
+  text-decoration: none;
+}
+.removelinkstyling:hover {
+  transition: 0.1s;
+  color: rgb(37, 194, 37);
+}
+.attribution {
+  color: white;
+  float: left;
+}
+
+.title {
+  @include display(inline-block);
+  font-size: 6vh;
+
+  font-family: Hack, monospace;
+}
+
+.title2 {
+  display: inline-block;
+  font-size: 5vh;
+}
+
+.secondarytitle {
+  font-size: 2vh;
+
+  font-family: Hack, monospace;
+}
+
+.description {
+  font-size: 3vh;
+}
 
 // Styling
 
-.container{
-    height: auto;
-  
-    transition: 0.1ms;
+.container {
+  height: auto;
+
+  transition: 0.1ms;
 }
 
-.imagecontainer{
+.imagecontainer {
+  background-image: url("/public/images/benjamin-suter-unsplash.jpg");
 
-    background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  padding: 5em;
+  width: auto;
 
-    padding: 5em;
-    width: auto;
-  
-    height: auto;
+  height: auto;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-   
-    box-sizing: border-box;
-
-    background-size: cover;
-  
-    transition: 0.1ms;
-
+  @include parallax;
 }
 
 // Sections
 
-#titlesection{
-    padding: 5vw;
-    height: 75vh;
-    margin-top: 10vh;
-    
+#titlesection {
+  @include basicontainer;
 }
 
-#installsection{
-    padding: 2.5em;
+#installsection {
+  padding: 2.5em;
 }
 
-#descriptionsection{
-    padding: 40px;
-    padding-top: 0px;
-    ul{
-        list-style-type: none;
-        padding: 0px;
-    }
-}
-
-.title{
-    display: inline-block;
-    font-size: 6vh;
-
-    font-family: Hack, monospace;
-}
-
-.secondarytitle{
-    font-size: 2vh;
-
-    font-family: Hack, monospace;
-}
-
-.description{
-    font-size: 3vh;
-}
-
-.removelinkstyling{
-    color: white;
-    text-decoration: none;
-}
-.removelinkstyling:hover{
-    transition: 0.1s;
-    color: rgb(37, 194, 37);
-}
-.attribution{
-    color: white;
-    float: left;
+#descriptionsection {
+  padding: 40px;
+  padding-top: 0px;
+  ul {
+    list-style-type: none;
+    padding: 0px;
+  }
 }
 
 //Installation
 
-.install{
-    display: inline-block;
-    background-color: rgb(211, 211, 211);
+.install {
+  @include display(inline-block);
+  background-color: rgb(211, 211, 211);
 }
 
-// Buttons
+// Buttons \\
 
-#buttonsection{
-    display: flex;
-    font-size: 20px;
-    text-decoration: none;
-    // justify-content: center;
-    gap: 1em;
-    padding-top: 1em;
+#buttonsection {
+  display: flex;
+  font-size: 20px;
+  text-decoration: none;
+  // justify-content: center;
+  gap: 1em;
+  padding-top: 1em;
 }
 
-.downloadbutton{
-    padding: 1em;
-    border-radius: 5px;
-    transition: 1s;
-    background-color: green;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
+.downloadbutton {
+  padding: 1em;
+  border-radius: 5px;
+  transition: 1s;
+  background-color: green;
+  color: white;
+  @include display(inline-block);
+  text-decoration: none;
 }
-.downloadbutton:hover{
-    background-color: rgb(3, 65, 3);
+.downloadbutton:hover {
+  background-color: rgb(3, 65, 3);
 }
-.startedbutton{
-    padding: 1em;
-    border-radius: 5px;
-    transition: 1s;
-    background-color: rgba(0, 128, 0, 0);
-    display: inline-block;
-    border: solid rgb(104, 104, 104) 3px;
-    text-decoration: none;
+.startedbutton {
+  padding: 1em;
+  border-radius: 5px;
+  transition: 1s;
+  background-color: rgba(0, 128, 0, 0);
+  @include display(inline-block);
+  border: solid rgb(104, 104, 104) 3px;
+  text-decoration: none;
 }
-.startedbutton:hover{
-    background-color: rgb(104, 104, 104);
-    color: white;
-    cursor: pointer;
+.startedbutton:hover {
+  background-color: rgb(104, 104, 104);
+  color: white;
+  cursor: pointer;
 }

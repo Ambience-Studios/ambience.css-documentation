@@ -1,0 +1,36 @@
+#compileddl {
+  margin-top: 10vh;
+  padding: 1vh;
+
+  @include display(flex);
+  @include flexcolumn;
+}
+#sourcedl {
+  margin: 0;
+  padding: 1vh;
+  @include display(flex);
+  @include flexcolumn;
+}
+
+.downloadtitle {
+  font-size: 4.5vh;
+}
+.downloadtitle2 {
+  font-size: 3vh;
+}
+.dldescription {
+  font-size: 2vh;
+}
+
+#downloadcompiled {
+  padding: 0.6em;
+  border-radius: 5px;
+  transition: 1s;
+  background-color: rgb(0, 55, 128);
+  color: white;
+  @include display(inline-block);
+  text-decoration: none;
+}
+#downloadcompiled:hover {
+  background-color: rgb(3, 65, 3);
+}
