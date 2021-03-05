@@ -5,12 +5,11 @@
   @include flexcolumn;
 }
 #sourcedl {
-  margin: 0;
   padding: 1vh;
   @include display(flex);
   @include flexcolumn;
 }
-#dlpage{
+#dlpage {
   padding-left: 25vw;
 }
 
