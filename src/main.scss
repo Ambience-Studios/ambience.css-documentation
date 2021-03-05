@@ -9,10 +9,14 @@
 // Importing other SCSS files
 @import "./base/colours";
 @import "./other/wip";
+
+// Components
+
 @import "./components/titlenavigationbar";
 @import "./components/generalnavigationbar";
 @import "./animation/typewriter";
 @import "./components/downloads";
+@import "./components/viewtree";
 
 * {
   font-family: "Roboto", sans-serif;

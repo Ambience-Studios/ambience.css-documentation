@@ -1,5 +1,4 @@
 #compileddl {
-  margin-top: 10vh;
   padding: 1vh;
 
   @include display(flex);
@@ -10,6 +9,9 @@
   padding: 1vh;
   @include display(flex);
   @include flexcolumn;
+}
+#dlpage{
+  padding-left: 25vw;
 }
 
 .downloadtitle {

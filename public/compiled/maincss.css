@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs");
 .black {
@@ -88,7 +89,7 @@ nav ul li a:hover {
 #navbar {
   overflow: hidden;
   background-color: #0098be;
-  position: absolute;
+  position: relative;
   top: 0;
   width: 100%;
   clip: rect(auto, auto, auto, auto);
@@ -138,8 +139,7 @@ nav ul li a:hover {
   }
 }
 @keyframes blink {
-  from,
-  to {
+  from, to {
     border-color: transparent;
   }
   50% {
@@ -147,7 +147,6 @@ nav ul li a:hover {
   }
 }
 #compileddl {
-  margin-top: 10vh;
   padding: 1vh;
   display: flex;
   flex-direction: column;
@@ -158,6 +157,10 @@ nav ul li a:hover {
   padding: 1vh;
   display: flex;
   flex-direction: column;
+}
+
+#dlpage {
+  padding-left: 25vw;
 }
 
 .downloadtitle {
@@ -184,6 +187,54 @@ nav ul li a:hover {
 
 #downloadcompiled:hover {
   background-color: #034103;
+}
+
+/* Remove default bullets */
+#treeviewmenu {
+  display: flex;
+  width: 20%;
+}
+
+ul, #treeviewL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#treeview {
+  margin-top: 10vh;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none;
+  /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "▶";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  transition: 0.5s;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
 }
 
 * {

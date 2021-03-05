@@ -6,25 +6,35 @@
   </head>
 
   <body>
-    <div id="page">
-      <div id="navbar">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Documentation</a></li>
-          <li>
-            <a href="https://github.com/Ambience-Studios/ambience.css"
-              ><img id="githublogo" src="../images/socials/githublogo.svg"
-            /></a>
-          </li>
-          <li>
-            <a href="https://discord.gg/7VUvVsp"
-              ><img id="discordlogo" src="../images/socials/discordlogo.svg"
-            /></a>
-          </li>
-          <a href="#" id="menu-icon"></a>
-        </ul>
-      </div>
+    <div id="navbar">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li>
+          <a href="https://github.com/Ambience-Studios/ambience.css"
+            ><img id="githublogo" src="../images/socials/githublogo.svg"
+          /></a>
+        </li>
+        <li>
+          <a href="https://discord.gg/7VUvVsp"
+            ><img id="discordlogo" src="../images/socials/discordlogo.svg"
+          /></a>
+        </li>
+        <a href="#" id="menu-icon"></a>
+      </ul>
+    </div>
+
+    <nav id="treeviewmenu">
+      <ul id="treeview">
+        <li><span class="caret">Get Started</span>
+          <ul class="nested">
+            <li>Download</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div id="dlpage">
 
       <div id="compileddl">
         <h1 class="downloadtitle black">Download</h1>
@@ -64,5 +74,6 @@
         </div>
       </div>
     </div>
+    <script src="../scripts/treeview.js"></script>
   </body>
 </html>
