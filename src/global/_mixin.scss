@@ -1,7 +1,10 @@
 @mixin basicontainer {
-  padding: 5vw;
-  height: 75vh;
-  margin-top: 10vh;
+  width: 99.7vw;
+  padding: 5em;
+  margin-top: 10rem;
+  height: auto;
+
+  transition: 0.1ms;
 }
 
 @mixin display($display) {

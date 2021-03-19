@@ -1,0 +1,93 @@
+.title {
+    @include display(inline-block);
+    font-size: 6vh;
+  
+    font-family: Hack, monospace;
+  }
+  
+  .title2 {
+    display: inline-block;
+    font-size: 5vh;
+  }
+  
+  .secondarytitle {
+    font-size: 2vh;
+  
+    font-family: Hack, monospace;
+  }
+  
+  .description {
+    font-size: 3vh;
+  }
+
+  .container {
+    height: auto;
+  
+    transition: 0.1ms;
+  }
+  
+  .imagecontainer {
+    background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  
+    padding: 5em;
+    width: auto;
+    height: auto;
+  
+    @include parallax;
+  }
+  
+  // Sections
+  
+  #titlesection {
+    @include basicontainer;
+  }
+  
+  #installsection {
+    padding: 2.5em;
+  }
+  
+  #descriptionsection {
+    padding: 40px;
+    padding-top: 0px;
+    ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+  }
+
+  .container {
+    height: auto;
+  
+    transition: 0.1ms;
+  }
+
+  
+  // Sections
+  
+  #titlesection {
+    @include basicontainer;
+  }
+  
+  #installsection {
+    padding: 2.5em;
+  }
+  
+  #descriptionsection {
+    padding: 40px;
+    padding-top: 0px;
+    ul {
+      list-style-type: none;
+      padding: 0px;
+    }
+  }
+
+  // Redundent
+    .imagecontainer {
+    background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  
+    padding: 5em;
+    width: auto;
+    height: auto;
+  
+    @include parallax;
+  }

@@ -1,0 +1,42 @@
+* {
+font-family: "Roboto", sans-serif;
+}
+
+html {
+min-height: 100%;
+overflow-x: hidden;
+}
+
+body {
+margin: 0vh;
+padding: 0vh;
+}
+
+.largegap {
+padding-bottom: 1em;
+}
+
+.gapabove {
+padding-top: 1em;
+}
+
+.black {
+    color: black;
+  }
+  .white {
+    color: white;
+  }
+  
+
+.removelinkstyling {
+color: white;
+text-decoration: none;
+}
+.removelinkstyling:hover {
+transition: 0.1s;
+color: rgb(37, 194, 37);
+}
+.attribution {
+color: white;
+float: left;
+}

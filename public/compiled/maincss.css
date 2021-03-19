@@ -1,12 +1,49 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @import url("//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.cs");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0vh;
+  padding: 0vh;
+}
+
+.largegap {
+  padding-bottom: 1em;
+}
+
+.gapabove {
+  padding-top: 1em;
+}
+
 .black {
   color: black;
 }
 
 .white {
   color: white;
+}
+
+.removelinkstyling {
+  color: white;
+  text-decoration: none;
+}
+
+.removelinkstyling:hover {
+  transition: 0.1s;
+  color: #25c225;
+}
+
+.attribution {
+  color: white;
+  float: left;
 }
 
 .wipimagecontainer {
@@ -39,20 +76,28 @@
   font-family: Hack, monospace;
 }
 
+.headerImage,
+.headerHomeImage {
+  width: 10rem;
+}
+
+.borderCircle {
+  border-radius: 9999em;
+}
+
 nav {
   overflow: hidden;
   background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 0;
   width: 100%;
-  clip: rect(auto, auto, auto, auto);
 }
 nav ul {
   text-align: center;
   list-style-type: none;
   list-style-type: none;
   margin: 0;
-  padding: 15px;
+  padding: 20px;
 }
 nav ul li {
   display: inline;
@@ -61,14 +106,15 @@ nav ul li {
   padding: 2em;
 }
 nav ul li a {
-  color: #f2f2f2;
+  color: #000000;
   text-decoration: none;
-  padding: 14px;
+  padding: 20px;
   border-radius: 5px;
 }
 nav ul li a:hover {
-  background-color: rgba(17, 17, 17, 0.5);
+  background-color: #009999;
   transition: 1s;
+  padding: 2em;
 }
 
 #githublogo {
@@ -84,38 +130,6 @@ nav ul li a:hover {
 #discordlogo {
   width: 42px;
   vertical-align: middle;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #0098be;
-  position: relative;
-  top: 0;
-  width: 100%;
-  clip: rect(auto, auto, auto, auto);
-}
-#navbar ul {
-  text-align: center;
-  list-style-type: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 15px;
-}
-#navbar ul li {
-  display: inline;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 17px;
-  padding: 2em;
-}
-#navbar ul li a {
-  color: black;
-  text-decoration: none;
-  padding: 14px;
-  border-radius: 5px;
-}
-#navbar ul li a:hover {
-  background-color: rgba(17, 17, 17, 0.5);
-  transition: 1s;
 }
 
 .typewriter-effect {
@@ -191,7 +205,6 @@ nav ul li a:hover {
 /* Remove default bullets */
 #treeviewmenu {
   display: flex;
-  width: 15%;
 }
 
 ul,
@@ -201,9 +214,8 @@ ul,
 
 /* Remove margins and padding from the parent ul */
 #treeview {
-  margin-top: 12vh;
+  margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
 }
 
 /* Style the caret/arrow */
@@ -237,41 +249,8 @@ ul,
   display: block;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-html {
-  min-height: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0vh;
-  padding: 0vh;
-}
-
-.largegap {
-  padding-bottom: 1em;
-}
-
-.gapabove {
-  padding-top: 1em;
-}
-
-.removelinkstyling {
-  color: white;
-  text-decoration: none;
-}
-
-.removelinkstyling:hover {
-  transition: 0.1s;
-  color: #25c225;
-}
-
-.attribution {
-  color: white;
-  float: left;
+.selected {
+  color: black;
 }
 
 .title {
@@ -314,9 +293,11 @@ body {
 }
 
 #titlesection {
-  padding: 5vw;
-  height: 75vh;
-  margin-top: 10vh;
+  width: 99.7vw;
+  padding: 5em;
+  margin-top: 10rem;
+  height: auto;
+  transition: 0.1ms;
 }
 
 #installsection {
@@ -332,47 +313,44 @@ body {
   padding: 0px;
 }
 
-.install {
-  display: inline-block;
-  background-color: lightgray;
+.container {
+  height: auto;
+  transition: 0.1ms;
 }
 
-#buttonsection {
-  display: flex;
-  font-size: 20px;
-  text-decoration: none;
-  gap: 1em;
-  padding-top: 1em;
+#titlesection {
+  width: 99.7vw;
+  padding: 5em;
+  margin-top: 10rem;
+  height: auto;
+  transition: 0.1ms;
 }
 
-.downloadbutton {
-  padding: 1em;
-  border-radius: 5px;
-  transition: 1s;
-  background-color: green;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
+#installsection {
+  padding: 2.5em;
 }
 
-.downloadbutton:hover {
-  background-color: #034103;
+#descriptionsection {
+  padding: 40px;
+  padding-top: 0px;
+}
+#descriptionsection ul {
+  list-style-type: none;
+  padding: 0px;
 }
 
-.startedbutton {
-  padding: 1em;
-  border-radius: 5px;
-  transition: 1s;
-  background-color: rgba(0, 128, 0, 0);
-  display: inline-block;
-  border: solid #686868 3px;
-  text-decoration: none;
-}
-
-.startedbutton:hover {
-  background-color: #686868;
-  color: white;
-  cursor: pointer;
+.imagecontainer {
+  background-image: url("/public/images/benjamin-suter-unsplash.jpg");
+  padding: 5em;
+  width: auto;
+  height: auto;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background-size: cover;
+  transition: 0.1ms;
 }
 
 /*# sourceMappingURL=maincss.css.map */

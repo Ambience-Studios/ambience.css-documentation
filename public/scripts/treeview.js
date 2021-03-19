@@ -1,4 +1,4 @@
-var toggler = document.getElementsByClassName("caret");
+var toggler = document.querySelector("#caret");
 var i;
 
 for (i = 0; i < toggler.length; i++) {
